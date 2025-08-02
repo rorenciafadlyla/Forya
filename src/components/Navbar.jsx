@@ -14,6 +14,10 @@ const Navbar = () => {
     const [underlineStyle, setUnderlineStyle] = useState({});
     const [isOpen, setIsOpen] = useState(false);
 
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [isHidden, setIsHidden] = useState(false);
+
+    // Mengatur underline aktif
     useEffect(() => {
         const currentRef = linkRefs[location.pathname];
         if (currentRef && currentRef.current) {
@@ -25,13 +29,32 @@ const Navbar = () => {
         }
     }, [location.pathname]);
 
+    // Mengatur efek scroll hide/show
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                setIsHidden(true); // scroll ke bawah
+            } else {
+                setIsHidden(false); // scroll ke atas
+            }
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScrollY]);
+
     const linkClass =
         "relative px-2 py-1 transition-colors duration-200 hover:text-slate";
 
     return (
-        <nav className="bg-drab text-snow px-6 py-4 shadow relative z-50">
+        <nav
+            className={`fixed top-0 left-0 w-full z-50 transition-opacity duration-500 ${isHidden ? "opacity-0 pointer-events-none" : "opacity-100"
+                } bg-drab/90 backdrop-blur-sm text-snow px-6 py-4 shadow`}
+        >
             <div className="container mx-auto flex justify-between items-center">
-                <h1 className="font-bold text-lg">MiniLemon</h1>
+                <h1 className="font-bold text-lg">Forya</h1>
 
                 {/* Desktop Nav */}
                 <div className="hidden sm:block relative">
