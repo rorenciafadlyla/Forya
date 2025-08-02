@@ -1,8 +1,8 @@
-# 🟡 Forya – Skill Test Glints Frontend
+# Forya 
 
-Forya adalah aplikasi web sederhana yang dibuat sebagai bagian dari Skill Test untuk posisi Frontend Developer di Glints. Aplikasi ini dibangun menggunakan React dan Tailwind CSS, dengan fitur pencarian produk dari API publik dan animasi scroll yang smooth.
+Forya adalah aplikasi web responsif yang menampilkan daftar produk dengan fitur pencarian dan navigasi antar halaman. Dibangun menggunakan React dan Tailwind CSS, aplikasi ini dirancang dengan pengalaman pengguna yang intuitif dan desain bersih.
 
-## 🔗 Live Preview
+## Live Preview
 
 https://foryacatalog.netlify.app/
 
