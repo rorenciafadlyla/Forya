@@ -1,12 +1,35 @@
-# React + Vite
+# 🟡 Forya – Skill Test Glints Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Forya adalah aplikasi web sederhana yang dibuat sebagai bagian dari Skill Test untuk posisi Frontend Developer di Glints. Aplikasi ini dibangun menggunakan React dan Tailwind CSS, dengan fitur pencarian produk dari API publik dan animasi scroll yang smooth.
 
-Currently, two official plugins are available:
+## 🔗 Live Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://foryacatalog.netlify.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Fitur Utama
+
+Terdiri dari 3 Halaman utama, yang pertama Home (Hero section, CTA, animasi scroll), yang kedua Product (Fetch & search produk dari API), yang terakhir About(Informasi singkat aplikasi). Web ini dibuat dengan Navbar & Footer konsisten, Responsif di berbagai ukuran layar, Efek animasi scroll (Fade-in Section), serta Dibangun dengan React + Tailwind CSS
+
+---
+
+## Tech Stack
+
+- React (Vite)
+- Tailwind CSS
+- Framer Motion – untuk animasi scroll
+- Fetch API – ambil data produk dari API publik
+- React Router DOM – routing antar halaman
+
+---
+
+## Cara Menjalankan Lokal
+- Clone repo:
+git clone https://github.com/rorenciafadlyla/Forya.git lalu cd Forya/my-app
+
+- Install dependencies:
+npm install
+
+- Jalankan:
+npm run dev
