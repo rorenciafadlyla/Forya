@@ -23,11 +23,11 @@ const About = () => {
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <Mail className="text-drab" size={20} />
-                                    <span>minilemon@mail.com</span>
+                                    <span>forya@mail.com</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <Instagram className="text-drab" size={20} />
-                                    <span>@minilemon.id</span>
+                                    <span>@forya.id</span>
                                 </div>
                             </div>
                         </div>
