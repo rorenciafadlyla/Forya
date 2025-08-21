@@ -26,7 +26,7 @@ Terdiri dari 3 Halaman utama, yang pertama Home (Hero section, CTA, animasi scro
 
 ## Cara Menjalankan Lokal
 - Clone repo:
-git clone https://github.com/rorenciafadlyla/Forya.git lalu cd Forya/my-app
+git clone https://github.com/rorenciafadlyla/Forya.git lalu cd Forya
 
 - Install dependencies:
 npm install
